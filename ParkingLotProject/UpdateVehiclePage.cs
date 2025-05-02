@@ -41,25 +41,25 @@ namespace ParkingLotProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-           if(textBox1.Text != "" && textBox2.Text != "" && comboBox1.Text != "")
-           { 
-              
-               _context.Vehicles.Update(new Vehicle
-                 {
-                     VehicleID = int.Parse(textBox1.Text),
-                     UserID = User.UserID,
-                     VehiclePlate = textBox2.Text,
-                     VehicleType = comboBox1.Text
-                 });
-               _context.SaveChanges();
-                 
-               Vehicle = new Vehicle
-                 {
-                     VehicleID = int.Parse(textBox1.Text),
-                     UserID = User.UserID,
-                     VehiclePlate = textBox2.Text,
-                     VehicleType = comboBox1.Text
-                 };
+            if (textBox1.Text != "" && textBox2.Text != "" && comboBox1.Text != "")
+            {
+
+                _context.Vehicles.Update(new Vehicle
+                {
+                    VehicleID = int.Parse(textBox1.Text),
+                    UserID = User.UserID,
+                    VehiclePlate = textBox2.Text,
+                    VehicleType = comboBox1.Text
+                });
+                _context.SaveChanges();
+
+                Vehicle = new Vehicle
+                {
+                    VehicleID = int.Parse(textBox1.Text),
+                    UserID = User.UserID,
+                    VehiclePlate = textBox2.Text,
+                    VehicleType = comboBox1.Text
+                };
 
                 MessageBox.Show("Vehicle updated successfully!");
 
@@ -74,5 +74,6 @@ namespace ParkingLotProject
 
         }
 
+        
     }
 }

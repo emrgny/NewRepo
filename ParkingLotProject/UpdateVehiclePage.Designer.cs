@@ -82,6 +82,7 @@
             // 
             // label4
             // 
+            label4.BackColor = Color.FromArgb(192, 255, 255);
             label4.Location = new Point(100, 69);
             label4.Name = "label4";
             label4.Size = new Size(354, 48);
@@ -104,7 +105,7 @@
             button1.Name = "button1";
             button1.Size = new Size(115, 44);
             button1.TabIndex = 3;
-            button1.Text = "button1";
+            button1.Text = "Update";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -114,7 +115,7 @@
             button2.Name = "button2";
             button2.Size = new Size(115, 44);
             button2.TabIndex = 3;
-            button2.Text = "button1";
+            button2.Text = "Go Back";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -123,7 +124,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(240, 255, 200);
-            ClientSize = new Size(556, 402);
+            ClientSize = new Size(562, 433);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(comboBox1);

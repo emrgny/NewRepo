@@ -184,7 +184,9 @@ namespace ParkingLotProject
         }
         private void button5_Click(object sender, EventArgs e)
         {
-
+            var addVehiclePage = new AddVehiclePage(Vehicle, User);
+            addVehiclePage.Show();
+            this.Hide();
         }
     }
 
